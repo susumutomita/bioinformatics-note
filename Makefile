@@ -33,6 +33,7 @@ RESET := \033[0m
 .PHONY: typecheck
 .PHONY: clean clean-all
 .PHONY: before-commit setup-husky
+.PHONY: deploy-gh-pages
 
 # ヘルプ
 # ------
@@ -66,6 +67,7 @@ help:
 	@printf "$(GREEN)その他:$(RESET)\n"
 	@echo "  make before-commit - コミット前チェック"
 	@echo "  make setup-husky   - Git フックのセットアップ"
+	@echo "  make deploy-gh-pages - GitHub Pagesへのデプロイ手順を表示"
 	@echo "  make clean         - ビルド成果物を削除"
 	@echo "  make clean-all     - node_modulesを含むすべてをクリーン"
 
@@ -185,3 +187,13 @@ setup-husky:
 	else \
 		printf "$(YELLOW)⚠️  Huskyは既にセットアップされています$(RESET)\n"; \
 	fi
+
+# GitHub Pagesデプロイ
+# --------------------
+deploy-gh-pages:
+	@echo "GitHub Pagesへデプロイしています..."
+	@echo "注意: GitHub Actionsを使用してデプロイします"
+	@echo "1. コードをmainブランチにプッシュしてください"
+	@echo "2. GitHub Actionsが自動的にビルドとデプロイを実行します"
+	@echo "3. リポジトリのSettings > Pagesで'GitHub Actions'を選択してください"
+	@printf "$(YELLOW)デプロイURL: https://susumutomita.github.io/bioinformatics-note/$(RESET)\n"

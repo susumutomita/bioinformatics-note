@@ -11,10 +11,10 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://bioinformatics-note.example.com',
-  baseUrl: '/',
+  url: 'https://susumutomita.github.io',
+  baseUrl: '/bioinformatics-note/',
 
-  organizationName: 'susumu',
+  organizationName: 'susumutomita',
   projectName: 'bioinformatics-note',
 
   onBrokenLinks: 'warn',
