@@ -49,7 +49,7 @@ const config: Config = {
       logo: {
         alt: 'Bioinformatics Note Logo',
         src: 'img/logo.svg',
-        href: '/intro',
+        href: '/',
       },
       items: [
         {

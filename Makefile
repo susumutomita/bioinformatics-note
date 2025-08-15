@@ -117,7 +117,7 @@ lint: lint-text lint-markdown typecheck
 
 lint-text:
 	@echo "textlintでドキュメントをチェックしています..."
-	@bun run textlint || (printf "$(YELLOW)⚠️  textlintの警告があります$(RESET)\n")
+	@bun run textlint || (printf "$(YELLOW)⚠️  textlintの警告があります$(RESET)\n"; true)
 	@printf "$(GREEN)✅ textlint完了$(RESET)\n"
 
 lint-text-fix:
