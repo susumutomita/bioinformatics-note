@@ -25,6 +25,16 @@ const sidebars: SidebarsConfig = {
             'lectures/week1/dna-replication-part4',
           ],
         },
+        {
+          type: 'category',
+          label: 'Week 2: モチーフ発見',
+          items: [
+            'lectures/week2/motif-finding-part1',
+            'lectures/week2/motif-finding-part2',
+            'lectures/week2/motif-finding-part3',
+            'lectures/week2/quiz-week3',
+          ],
+        },
       ],
     },
     {
