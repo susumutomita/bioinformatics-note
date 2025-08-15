@@ -28,7 +28,11 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Week 2: モチーフ発見',
-          items: ['lectures/week2/motif-finding-part1', 'lectures/week2/motif-finding-part2'],
+          items: [
+            'lectures/week2/motif-finding-part1',
+            'lectures/week2/motif-finding-part2',
+            'lectures/week2/motif-finding-part3',
+          ],
         },
       ],
     },
