@@ -1,51 +1,62 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# Tutorial Intro
+# バイオインフォマティクス講義ノート
 
-Let's discover **Docusaurus in less than 5 minutes**.
+## 📚 このサイトについて
 
-## Getting Started
+Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializations/bioinformatics)の講義ノートをまとめたサイトです。
 
-Get started by **creating a new site**.
+バイオインフォマティクスの基礎から応用まで、アルゴリズムと生物学の両面から学習していきます。
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## 🧬 学習内容
 
-### What you'll need
+### Week 1: DNA複製の基礎
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- [DNA複製はゲノムのどこで始まるのか（前編）](./lectures/week1/dna-replication-part1)
+  - 複製起点（OriC）の探索
+  - 頻出語問題（Frequent Words Problem）
+  - DnaAボックスの発見
 
-## Generate a new site
+### 今後追加予定
 
-Generate a new Docusaurus site using the **classic template**.
+- DNA複製はゲノムのどこで始まるのか（後編）
+- ゲノム配列のアセンブリ
+- 配列アラインメント
+- 進化系統樹の構築
 
-The classic template will automatically be added to your project after you run the command:
+## 🔧 アルゴリズム
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+- [頻出語問題](./algorithms/frequent-words)
+- パターンマッチング
+- グラフアルゴリズム
+- 動的計画法
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other terminal.
-This works with any code editor's integrated terminal.
+## 📖 参考資料
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- [用語集](./resources/glossary)
+- 推奨図書（準備中）
+- 関連リンク（準備中）
 
-## Start your site
+## 🚀 はじめ方
 
-Run the development server:
+1. **基礎知識の確認**
+   - 基本的な生物学の知識
+   - プログラミングの基礎（Python推奨）
 
-```bash
-cd my-website
-npm run start
-```
+2. **週ごとの学習**
+   - 各週の講義ノートを順番に読む
+   - アルゴリズムの実装を試す
+   - 練習問題を解く
 
-The `cd` command changes the directory you're working with.
-To work with your newly created Docusaurus site, navigate the terminal there.
+3. **実践**
+   - Rosalindの問題を解く
+   - 実際のゲノムデータで分析を試す
 
-The `npm run start` command builds your website locally and serves it through a development server.
-You can view it at http://localhost:3000/.
+## 📝 注意事項
 
-Open `docs/intro.md` (this page) and edit some lines.
-The site **reloads automatically** and displays your changes.
+- このノートは個人的な学習記録である
+- 内容の正確性については保証しない
+- 最新の情報は公式のCourseraコースを参照すること

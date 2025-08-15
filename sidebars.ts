@@ -5,13 +5,27 @@ const sidebars: SidebarsConfig = {
     'intro',
     {
       type: 'category',
-      label: '基礎知識',
-      items: ['tutorial-basics/create-a-document'],
+      label: '📚 講義',
+      collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'Week 1: DNA複製',
+          items: ['lectures/week1/dna-replication-part1', 'lectures/week1/dna-replication-part2'],
+        },
+      ],
     },
     {
       type: 'category',
-      label: '応用',
-      items: ['tutorial-extras/manage-docs-versions'],
+      label: '🔧 アルゴリズム',
+      collapsed: false,
+      items: ['algorithms/frequent-words'],
+    },
+    {
+      type: 'category',
+      label: '📖 参考資料',
+      collapsed: true,
+      items: ['resources/glossary'],
     },
   ],
 };

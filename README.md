@@ -77,14 +77,14 @@ make lint-markdown-fix
    ```
 
 3. **確認**
-   - Actions タブでデプロイ状況を確認
+   - Actionsタブでデプロイ状況を確認
    - デプロイ完了後: https://susumutomita.github.io/bioinformatics-note/
 
 ### 手動デプロイ
 
 GitHub Actionsのワークフローは手動実行も可能です：
 
-1. Actions タブへ移動
+1. Actionsタブへ移動
 2. "Deploy to GitHub Pages"を選択
 3. "Run workflow"をクリック
 
@@ -117,4 +117,4 @@ make deploy-gh-pages # デプロイ手順を表示
 
 ## 📄 ライセンス
 
-MIT
+[MIT](./LICENSE)
