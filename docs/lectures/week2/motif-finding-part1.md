@@ -268,5 +268,4 @@ k が大きくなると計算時間が指数的に増加します。k ≤ 15程�
 
 ## 📚 参考文献
 
-- Coursera: Bioinformatics Specialization - Week 2
 - Jones, N.C. and Pevzner, P.A. (2004) An Introduction to Bioinformatics Algorithms
