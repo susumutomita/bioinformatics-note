@@ -32,6 +32,7 @@ const sidebars: SidebarsConfig = {
             'lectures/week2/motif-finding-part1',
             'lectures/week2/motif-finding-part2',
             'lectures/week2/motif-finding-part3',
+            'lectures/week2/quiz-week3',
           ],
         },
       ],
