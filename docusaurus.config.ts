@@ -3,6 +3,10 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
   title: 'Bioinformatics Note',
   tagline: 'バイオインフォマティクス講義ノート',
   favicon: 'img/favicon.ico',
@@ -43,6 +47,9 @@ const config: Config = {
   ],
 
   themeConfig: {
+    mermaid: {
+      theme: { light: 'neutral', dark: 'dark' },
+    },
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Bioinformatics Note',

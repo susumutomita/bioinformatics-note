@@ -62,6 +62,7 @@ CourseraのBioinformatics Specializationの講義ノートをDocusaurusで管理
 - **パッケージマネージャー**: Bun
 - **CI/CD**: GitHub Actions
 - **デプロイ**: GitHub Pages
+- **ダイアグラム**: Mermaid（@docusaurus/theme-mermaid）
 - **品質管理**:
   - textlint（日本語チェック）
   - markdownlint
