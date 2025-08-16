@@ -418,12 +418,6 @@ def approximate_pattern_count(text, pattern, d):
    - 逆相補鎖の考慮
    - より複雑なパターンへの対応
 
-## 🚀 次のステップ
-
-- [モチーフ探索問題](./motif-finding)
-- [位置重み行列（PWM）](./position-weight-matrix)
-- [ギブスサンプリング](./gibbs-sampling)
-
 ## 📚 参考資料
 
 - [Rosalind - Frequent Words with Mismatches](http://rosalind.info/problems/ba1i/)
