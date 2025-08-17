@@ -44,6 +44,15 @@ const sidebars: SidebarsConfig = {
             'lectures/week2/quiz-week3',
           ],
         },
+        {
+          type: 'category',
+          label: 'Week 3: ゲノムアセンブリ',
+          items: [
+            'lectures/week3/genome-sequencing-intro',
+            'lectures/week3/genome-assembly-intro',
+            'lectures/week3/genome-assembly-euler',
+          ],
+        },
       ],
     },
     {
