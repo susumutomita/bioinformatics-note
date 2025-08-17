@@ -7,7 +7,11 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '🧬 基礎知識',
       collapsed: false,
-      items: ['basics/biology-fundamentals', 'basics/bioinformatics-vs-synthetic-biology'],
+      items: [
+        'basics/biology-fundamentals',
+        'basics/bioinformatics-vs-synthetic-biology',
+        'basics/what-is-mrna',
+      ],
     },
     {
       type: 'category',
@@ -50,6 +54,16 @@ const sidebars: SidebarsConfig = {
         'algorithms/frequent-words',
         'algorithms/gc-skew',
         'algorithms/frequent-words-mismatches',
+      ],
+    },
+    {
+      type: 'category',
+      label: '🚀 先端技術',
+      collapsed: false,
+      items: [
+        'advanced/state-and-ai-in-biology',
+        'advanced/mrna-vaccine-development',
+        'advanced/drug-discovery-limits-and-synthetic-biology',
       ],
     },
     {
