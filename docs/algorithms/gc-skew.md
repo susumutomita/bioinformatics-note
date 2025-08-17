@@ -414,12 +414,6 @@ def batch_analyze_genomes(genome_files):
    - 頻出語問題と組み合わせて精度向上
    - 統計的検証で信頼性を確保
 
-## 🚀 次のステップ
-
-- [統合的アプローチ](./integrated-ori-finding)
-- [比較ゲノム解析](../comparative-genomics)
-- [機械学習アプローチ](./ml-ori-prediction)
-
 ## 📚 参考資料
 
 - [Wikipedia - GC-skew](https://en.wikipedia.org/wiki/GC_skew)

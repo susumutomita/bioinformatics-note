@@ -340,8 +340,6 @@ graph TD
 ## 🚀 次のステップ
 
 - [ミスマッチ頻出語問題の詳細](../../algorithms/frequent-words-mismatches)
-- [実際のゲノム解析](../week2/real-genome-analysis)
-- [高度な複製起点予測](../../algorithms/advanced-ori-prediction)
 
 ## 📚 参考文献
 

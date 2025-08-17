@@ -335,8 +335,6 @@ def find_ori_integrated(genome, k=9, L=500, t=3):
 ## 🚀 次のステップ
 
 - [GCスキュー分析の詳細](../../algorithms/gc-skew)
-- [統合的アプローチの実装](../../algorithms/integrated-ori-finding)
-- [実際のゲノムでの検証](../week2/real-genome-analysis)
 
 ## 📚 参考文献
 

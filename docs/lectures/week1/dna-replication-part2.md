@@ -253,9 +253,7 @@ def GCSkew(Genome):
 
 ## 🚀 次のステップ
 
-- [塊探し問題の詳細](../../algorithms/clump-finding)
 - [GCスキュー分析](../../algorithms/gc-skew)
-- [比較ゲノム学的アプローチ](../week2/comparative-genomics)
 
 ## 📚 参考文献
 

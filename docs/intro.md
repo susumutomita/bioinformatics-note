@@ -42,6 +42,34 @@ Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializati
   - ミスマッチの重要性
   - 現実世界の複雑性
 
+### Week 2: モチーフ発見
+
+- [モチーフ発見問題（基礎）](./lectures/week2/motif-finding-part1)
+  - 遺伝子制御とモチーフ
+  - (k,d)モチーフの概念
+  - モチーフ列挙アルゴリズム
+  - 📘 [超詳細版](./lectures/week2/motif-finding-part1-detailed) - 遺伝子のON/OFFスイッチを探す
+
+- [ランダム化モチーフ探索](./lectures/week2/randomized-motif-search-detailed)
+  - なぜランダムが正解を導くのか
+  - プロファイルとモチーフの相互変換
+  - 結核菌の冬眠メカニズム
+
+- [ギブスサンプラー](./lectures/week2/gibbs-sampler-detailed)
+  - より賢いサイコロの振り方
+  - 擬似カウントの重要性
+  - クロムウェルの法則
+
+- [ラプラスの法則とChIP-seq](./lectures/week2/laplace-and-chip-seq-detailed)
+  - ゼロ確率問題の解決
+  - 実験技術との融合
+  - アルゴリズムの限界と突破
+
+- [モチーフ発見から創薬へ](./lectures/week2/understanding-motif-and-drug-discovery)
+  - MEME実習で学んだこと
+  - DNA配列の無効化メカニズム
+  - 実際の薬の作り方
+
 ### 今後追加予定
 
 - ゲノム配列のアセンブリ
