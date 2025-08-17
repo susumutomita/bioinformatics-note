@@ -17,6 +17,7 @@ Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializati
 
 → [生物学の基礎知識](./basics/biology-fundamentals) - DNAとは何かから始める超入門。
 → [バイオインフォマティクスと合成生物学の違い](./basics/bioinformatics-vs-synthetic-biology) - 解析と創造の違い。
+→ [mRNAとは何か](./basics/what-is-mrna) - セントラルドグマから理解する。
 
 ## 🧬 学習内容
 
@@ -85,6 +86,18 @@ Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializati
 - パターンマッチング（準備中）
 - グラフアルゴリズム（準備中）
 - 動的計画法（準備中）
+
+## 🚀 先端技術
+
+- [STATE - AIが細胞を理解する時代](./advanced/state-and-ai-in-biology)
+  - Arc InstituteのAIモデル
+  - LLMと生物学の融合
+- [mRNAワクチンはどう作られたか](./advanced/mrna-vaccine-development)
+  - 2日で設計された理由
+  - バイオインフォマティクスの貢献
+- [創薬の限界と合成生物学の突破](./advanced/drug-discovery-limits-and-synthetic-biology)
+  - 既存の改善vs抜本的変革
+  - CAR-T療法などの成功例
 
 ## 📖 参考資料
 
