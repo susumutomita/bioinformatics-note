@@ -7,7 +7,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: '🧬 基礎知識',
       collapsed: false,
-      items: ['basics/biology-fundamentals'],
+      items: ['basics/biology-fundamentals', 'basics/bioinformatics-vs-synthetic-biology'],
     },
     {
       type: 'category',
