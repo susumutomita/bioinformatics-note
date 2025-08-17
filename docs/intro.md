@@ -72,11 +72,26 @@ Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializati
   - DNA配列の無効化メカニズム
   - 実際の薬の作り方
 
+### Week 3: ゲノムアセンブリ
+
+- [ゲノムシーケンシングとは](./lectures/week3/genome-sequencing-intro)
+  - DNAを読む技術の革命
+  - 個別化医療への道
+  - 1000ドルゲノムの時代
+
+- [ゲノムアセンブリ入門](./lectures/week3/genome-assembly-intro)
+  - ショットガン法の原理
+  - アセンブリの課題
+
+- [オイラー経路によるアセンブリ](./lectures/week3/genome-assembly-euler)
+  - グラフ理論の応用
+  - de Bruijnグラフ
+
 ### 今後追加予定
 
-- ゲノム配列のアセンブリ
 - 配列アラインメント
 - 進化系統樹の構築
+- タンパク質構造予測
 
 ## 🔧 アルゴリズム
 
