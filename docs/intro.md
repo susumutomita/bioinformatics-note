@@ -16,6 +16,7 @@ Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializati
 プログラミングは分かるけど生物学は初めてという方は、まずこちらから。
 
 → [生物学の基礎知識](./basics/biology-fundamentals) - DNAとは何かから始める超入門。
+→ [バイオインフォマティクスと合成生物学の違い](./basics/bioinformatics-vs-synthetic-biology) - 解析と創造の違い。
 
 ## 🧬 学習内容
 
