@@ -50,6 +50,10 @@ const sidebars: SidebarsConfig = {
           items: [
             'lectures/week3/genome-sequencing-intro',
             'lectures/week3/genome-assembly-intro',
+            'lectures/week3/newspaper-explosion-problem',
+            'lectures/week3/string-reconstruction-problem',
+            'lectures/week3/hamiltonian-path-problem',
+            'lectures/week3/euler-path-problem',
             'lectures/week3/genome-assembly-euler',
           ],
         },
