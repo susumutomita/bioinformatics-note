@@ -60,7 +60,13 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Week 4: ゲノムアセンブリ（続き）',
-          items: ['lectures/week4/de-bruijn-graph', 'lectures/week4/euler-theorem'],
+          items: [
+            'lectures/week4/de-bruijn-graph',
+            'lectures/week4/euler-theorem',
+            'lectures/week4/read-pair-assembly',
+            'lectures/week4/de-bruijn-reality',
+            'lectures/week4/return-to-konigsberg',
+          ],
         },
       ],
     },
