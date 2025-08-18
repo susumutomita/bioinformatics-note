@@ -57,6 +57,11 @@ const sidebars: SidebarsConfig = {
             'lectures/week3/genome-assembly-euler',
           ],
         },
+        {
+          type: 'category',
+          label: 'Week 4: ゲノムアセンブリ（続き）',
+          items: ['lectures/week4/de-bruijn-graph', 'lectures/week4/euler-theorem'],
+        },
       ],
     },
     {
