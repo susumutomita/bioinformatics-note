@@ -69,6 +69,7 @@ const sidebars: SidebarsConfig = {
             'lectures/week4/antibiotic-discovery',
             'lectures/week4/bacterial-antibiotic-production',
             'lectures/week4/mass-spectrometry-sequencing',
+            'lectures/week4/brute-force-cyclopeptide',
           ],
         },
       ],
