@@ -158,3 +158,4 @@ def is_consistent(peptide, experimental_spectrum):
 ## 🔗 関連トピック
 
 - [質量分析シークエンシング](./mass-spectrometry-sequencing.md)
+- [分岐限定法](./branch-and-bound.md)
