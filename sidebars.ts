@@ -68,6 +68,7 @@ const sidebars: SidebarsConfig = {
             'lectures/week4/return-to-konigsberg',
             'lectures/week4/antibiotic-discovery',
             'lectures/week4/bacterial-antibiotic-production',
+            'lectures/week4/mass-spectrometry-sequencing',
           ],
         },
       ],
