@@ -71,6 +71,7 @@ const sidebars: SidebarsConfig = {
             'lectures/week4/mass-spectrometry-sequencing',
             'lectures/week4/brute-force-cyclopeptide',
             'lectures/week4/branch-and-bound',
+            'lectures/week4/error-tolerant-peptide-sequencing',
           ],
         },
       ],
@@ -83,6 +84,7 @@ const sidebars: SidebarsConfig = {
         'algorithms/frequent-words',
         'algorithms/gc-skew',
         'algorithms/frequent-words-mismatches',
+        'algorithms/leaderboard-cyclopeptide-sequencing',
       ],
     },
     {
