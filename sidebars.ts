@@ -82,6 +82,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'lectures/bioinformatics3/course-introduction',
             'lectures/bioinformatics3/sequence-comparison-to-biological-insights',
+            'lectures/bioinformatics3/alignment-game-and-lcs',
           ],
         },
       ],
