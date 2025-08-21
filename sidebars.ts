@@ -84,6 +84,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics3/sequence-comparison-to-biological-insights',
             'lectures/bioinformatics3/alignment-game-and-lcs',
             'lectures/bioinformatics3/manhattan-tourist-problem',
+            'lectures/bioinformatics3/change-problem-dynamic-programming',
           ],
         },
       ],
