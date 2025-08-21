@@ -76,6 +76,14 @@ const sidebars: SidebarsConfig = {
             'lectures/week4/spectral-convolution',
           ],
         },
+        {
+          type: 'category',
+          label: 'Bioinformatics III: 配列比較とゲノム再配列',
+          items: [
+            'lectures/bioinformatics3/course-introduction',
+            'lectures/bioinformatics3/sequence-comparison-to-biological-insights',
+          ],
+        },
       ],
     },
     {
