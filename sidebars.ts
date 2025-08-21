@@ -72,6 +72,8 @@ const sidebars: SidebarsConfig = {
             'lectures/week4/brute-force-cyclopeptide',
             'lectures/week4/branch-and-bound',
             'lectures/week4/error-tolerant-peptide-sequencing',
+            'lectures/week4/non-standard-amino-acids',
+            'lectures/week4/spectral-convolution',
           ],
         },
       ],
