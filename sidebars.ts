@@ -87,6 +87,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics3/from-manhattan-to-alignment-graphs',
             'lectures/bioinformatics3/global-to-local-alignment',
             'lectures/bioinformatics3/affine-gap-penalties',
+            'lectures/bioinformatics3/space-efficient-alignment',
             'lectures/bioinformatics3/change-problem-dynamic-programming',
           ],
         },
