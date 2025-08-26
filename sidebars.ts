@@ -89,6 +89,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics3/affine-gap-penalties',
             'lectures/bioinformatics3/space-efficient-alignment',
             'lectures/bioinformatics3/multiple-sequence-alignment',
+            'lectures/bioinformatics3/genome-rearrangements-man-to-mouse',
             'lectures/bioinformatics3/change-problem-dynamic-programming',
           ],
         },
