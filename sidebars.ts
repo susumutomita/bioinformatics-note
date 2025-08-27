@@ -90,6 +90,8 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics3/space-efficient-alignment',
             'lectures/bioinformatics3/multiple-sequence-alignment',
             'lectures/bioinformatics3/genome-rearrangements-man-to-mouse',
+            'lectures/bioinformatics3/breakpoint-graph-detailed',
+            'lectures/bioinformatics3/two-break-theorem-detailed',
             'lectures/bioinformatics3/change-problem-dynamic-programming',
           ],
         },
