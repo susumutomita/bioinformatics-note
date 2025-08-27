@@ -94,6 +94,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics3/sorting-by-reversals-implementation',
             'lectures/bioinformatics3/breakpoint-theorem',
             'lectures/bioinformatics3/tumor-genome-rearrangements',
+            'lectures/bioinformatics3/two-break-distance',
             'lectures/bioinformatics3/change-problem-dynamic-programming',
           ],
         },
