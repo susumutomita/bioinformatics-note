@@ -101,6 +101,11 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics3/change-problem-dynamic-programming',
           ],
         },
+        {
+          type: 'category',
+          label: 'Bioinformatics IV: 分子進化',
+          items: ['lectures/bioinformatics4/course-introduction-molecular-evolution'],
+        },
       ],
     },
     {
