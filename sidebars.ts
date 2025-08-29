@@ -97,6 +97,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics3/two-break-distance',
             'lectures/bioinformatics3/breakpoint-graph-detailed',
             'lectures/bioinformatics3/two-break-theorem-detailed',
+            'lectures/bioinformatics3/fragile-breakage-model-detailed',
             'lectures/bioinformatics3/change-problem-dynamic-programming',
           ],
         },
