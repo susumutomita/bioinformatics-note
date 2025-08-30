@@ -104,7 +104,10 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Bioinformatics IV: 分子進化',
-          items: ['lectures/bioinformatics4/course-introduction-molecular-evolution'],
+          items: [
+            'lectures/bioinformatics4/course-introduction-molecular-evolution',
+            'lectures/bioinformatics4/fastest-outbreak',
+          ],
         },
       ],
     },
