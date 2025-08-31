@@ -107,6 +107,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'lectures/bioinformatics4/course-introduction-molecular-evolution',
             'lectures/bioinformatics4/fastest-outbreak',
+            'lectures/bioinformatics4/distance-matrix-to-tree',
             'lectures/bioinformatics4/distance-based-phylogeny-algorithm',
           ],
         },
