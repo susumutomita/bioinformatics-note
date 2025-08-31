@@ -11,6 +11,8 @@ const sidebars: SidebarsConfig = {
         'basics/biology-fundamentals',
         'basics/bioinformatics-vs-synthetic-biology',
         'basics/what-is-mrna',
+        'basics/e-coli-why-so-important',
+        'basics/plasmid-design-practice',
       ],
     },
     {
