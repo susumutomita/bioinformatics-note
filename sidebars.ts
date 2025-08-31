@@ -110,6 +110,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics4/distance-matrix-to-tree',
             'lectures/bioinformatics4/distance-based-phylogeny-algorithm',
             'lectures/bioinformatics4/additive-phylogeny',
+            'lectures/bioinformatics4/least-squares-phylogeny',
           ],
         },
       ],
