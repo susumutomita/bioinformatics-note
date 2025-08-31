@@ -18,6 +18,7 @@ Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializati
 → [生物学の基礎知識](./basics/biology-fundamentals) - DNAとは何かから始める超入門。
 → [バイオインフォマティクスと合成生物学の違い](./basics/bioinformatics-vs-synthetic-biology) - 解析と創造の違い。
 → [mRNAとは何か](./basics/what-is-mrna) - セントラルドグマから理解する。
+→ [なぜ大腸菌がこんなに使われるのか](./basics/e-coli-why-so-important) - 生物学研究の主役、大腸菌の秘密。
 
 ## 🧬 学習内容
 
@@ -87,11 +88,62 @@ Courseraの[Bioinformatics Specialization](https://www.coursera.org/specializati
   - グラフ理論の応用
   - de Bruijnグラフ
 
-### 今後追加予定
+- [ハミルトン経路問題](./lectures/week3/hamiltonian-path-problem)
+  - NP完全問題の理解
 
-- 配列アラインメント
-- 進化系統樹の構築
-- タンパク質構造予測
+- [文字列再構成問題](./lectures/week3/string-reconstruction-problem)
+  - k-merからの再構成
+
+### Week 4: 抗生物質の発見とペプチド配列決定
+
+- [抗生物質の発見](./lectures/week4/antibiotic-discovery)
+  - ペプチド系抗生物質の仕組み
+
+- [細菌による抗生物質生産](./lectures/week4/bacterial-antibiotic-production)
+  - 非リボソーム性ペプチド合成
+
+- [質量分析によるペプチド配列決定](./lectures/week4/mass-spectrometry-sequencing)
+  - スペクトルからの配列再構成
+
+- [de Bruijnグラフの応用](./lectures/week4/de-bruijn-graph)
+  - ゲノムアセンブリの実践
+
+### Bioinformatics III: 配列比較
+
+- [コース紹介](./lectures/bioinformatics3/course-introduction)
+  - 配列比較の重要性
+
+- [マンハッタン観光客問題](./lectures/bioinformatics3/manhattan-tourist-problem)
+  - 動的計画法の基礎
+
+- [配列アラインメントゲーム](./lectures/bioinformatics3/alignment-game-and-lcs)
+  - LCS（最長共通の部分列）問題
+
+- [グローバルからローカルアラインメントへ](./lectures/bioinformatics3/global-to-local-alignment)
+  - Smith-Watermanアルゴリズム
+
+- [ゲノム再配列](./lectures/bioinformatics3/genome-rearrangements-man-to-mouse)
+  - ヒトとマウスの比較
+
+- [ブレークポイントグラフ](./lectures/bioinformatics3/breakpoint-graph-detailed)
+  - ゲノム再配列の数学
+
+### Bioinformatics IV: 分子進化
+
+- [分子進化入門](./lectures/bioinformatics4/course-introduction-molecular-evolution)
+  - 進化の分子時計
+
+- [距離行列から系統樹へ](./lectures/bioinformatics4/distance-matrix-to-tree)
+  - 系統樹構築の基礎
+
+- [加法系統樹](./lectures/bioinformatics4/additive-phylogeny)
+  - 距離の加法性
+
+- [最小二乗法による系統樹](./lectures/bioinformatics4/least-squares-phylogeny)
+  - 最適化アプローチ
+
+- [UPGMA法](./lectures/bioinformatics4/ultrametric-trees-upgma)
+  - ウルトラメトリック木の構築
 
 ## 🔧 アルゴリズム
 
