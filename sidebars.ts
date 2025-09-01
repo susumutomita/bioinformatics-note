@@ -115,6 +115,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics4/least-squares-phylogeny',
             'lectures/bioinformatics4/ultrametric-trees-upgma',
             'lectures/bioinformatics4/neighbor-joining-detailed',
+            'lectures/bioinformatics4/character-based-phylogeny',
           ],
         },
       ],
