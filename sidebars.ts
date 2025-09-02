@@ -122,6 +122,11 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics4/paleontology-meets-computing',
           ],
         },
+        {
+          type: 'category',
+          label: 'Bioinformatics V: 質量分析',
+          items: ['lectures/bioinformatics5/ideal-spectrum-decoding'],
+        },
       ],
     },
     {
