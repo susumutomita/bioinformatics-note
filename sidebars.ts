@@ -119,6 +119,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics4/small-parsimony-algorithm',
             'lectures/bioinformatics4/large-parsimony-algorithm',
             'lectures/bioinformatics4/modern-phylogeny-applications',
+            'lectures/bioinformatics4/paleontology-meets-computing',
           ],
         },
       ],
