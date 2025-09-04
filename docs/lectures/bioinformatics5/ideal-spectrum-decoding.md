@@ -503,16 +503,562 @@ def practice_problems():
 practice_problems()
 ```
 
-## 🚀 次回予告
+## 📖 ステップ9：実スペクトルとの出会い（現実の壁）
 
-次回は「**ペプチドシーケンシング問題**」を学びます！
+### 9-1. ティラノサウルスのスペクトルから学ぶ
 
-- 実際のノイズだらけのスペクトル
-- スコアリング関数の設計
-- 動的計画法による高速化
-- データベース検索アルゴリズム
+でも、ちょっと待ってください。これまで理想的なケースばかり見てきましたが、実際の質量分析はどうなの？
 
-理想から現実へ、より実用的なアルゴリズムを開発します！
+```python
+def real_world_example():
+    """
+    実際のティラノサウルスのスペクトル例
+    """
+    print("実世界での驚きの発見:")
+    print("=" * 40)
+
+    print("\nAsara博士の実験（2007年）:")
+    print("• 6800万年前のティラノサウルスの骨化石から")
+    print("• 質量分析でペプチド配列を特定")
+    print("• 現代の鳥類との類似性を発見！")
+
+    print("\nでも、実際のスペクトルはこんな感じ:")
+    print("理想: [0, 57, 128, 225]  ← きれいで完璧")
+    print("現実: [0.1, 56.9, 128.3, 150.2, 224.8, 240.1, ...]")
+    print("      ↑ノイズ  ↑誤差  ↑不明ピーク")
+
+    print("\nここで重要な疑問が...")
+
+real_world_example()
+```
+
+### 9-2. 「どのペプチドが正解？」問題
+
+```python
+def peptide_candidate_problem():
+    """
+    複数のペプチド候補をどう比較するか
+    """
+    print("ペプチド候補の比較問題:")
+    print("=" * 40)
+
+    # 同じスペクトルに対する2つの候補
+    spectrum_peaks = [0, 71, 114, 131, 185, 202, 245, 316]
+
+    candidate_1 = "NQEL"  # 候補1
+    candidate_2 = "NLQE"  # 候補2
+
+    print(f"\n実際のスペクトル: {spectrum_peaks}")
+    print(f"\n候補1のペプチド: {candidate_1}")
+    print(f"候補2のペプチド: {candidate_2}")
+
+    print("\nどちらが正解？")
+    print("理想スペクトルでは「完全一致」で判定したけど...")
+    print("実スペクトルでは「どれくらい良く説明するか」で判定！")
+
+peptide_candidate_problem()
+```
+
+## 📖 ステップ10：共有ピーク数という天才的アイデア
+
+### 10-1. まず素朴な疑問から
+
+「どれくらい良く説明するか」って、具体的にはどう測るの？
+
+### 10-2. なぜそうなるのか
+
+実は、**共有ピーク数（Shared Peak Count）**という概念があります！
+
+```python
+def shared_peak_count_concept():
+    """
+    共有ピーク数の基本概念
+    """
+    print("共有ピーク数の魔法:")
+    print("=" * 40)
+
+    # 実スペクトル（ティラノサウルス由来）
+    actual_spectrum = [0, 71, 114, 131, 185, 202, 245, 316, 400, 515]
+
+    # 候補ペプチドの理論スペクトル
+    candidate_peptide = "NQEL"
+    theoretical_peaks = [0, 114, 242, 371, 484]  # NQELの理論値
+
+    print(f"実際のスペクトル: {actual_spectrum}")
+    print(f"候補ペプチドの理論スペクトル: {theoretical_peaks}")
+
+    # 共有ピーク数を計算
+    shared_peaks = []
+    for peak in theoretical_peaks:
+        if peak in actual_spectrum:
+            shared_peaks.append(peak)
+
+    print(f"\n共有ピーク: {shared_peaks}")
+    print(f"共有ピーク数: {len(shared_peaks)}")
+
+    print("\nこれは「ペプチドがスペクトルをどれだけ説明できるか」の指標！")
+
+shared_peak_count_concept()
+```
+
+### 10-3. 具体例で確認
+
+```python
+def annotation_example():
+    """
+    スペクトル注釈の具体例
+    """
+    print("スペクトルの注釈付け:")
+    print("=" * 40)
+
+    print("実際のスペクトルのピーク → 説明方法:")
+    print("")
+
+    # ピークと対応する断片の例
+    annotations = [
+        (114, "長さ1のプレフィックス N", "✓"),
+        (242, "長さ2のプレフィックス NQ", "✓"),
+        (371, "長さ3のプレフィックス NQE", "✓"),
+        (131, "長さ1のサフィックス L", "✓"),
+        (260, "長さ2のサフィックス EL", "✓"),
+        (388, "長さ3のサフィックス QEL", "✓")
+    ]
+
+    for mass, description, found in annotations:
+        status = "説明可能" if found == "✓" else "説明不可"
+        print(f"  質量 {mass:3d}: {description:20s} → {status}")
+
+    print(f"\n注釈できたピーク数: 6個")
+    print("共有ピーク数 = 6")
+
+annotation_example()
+```
+
+### 10-4. ここがポイント
+
+でも待って、共有ピーク数が多ければ多いほど良いペプチド候補？
+
+## 📖 ステップ11：スコアリング方法の大論争
+
+### 11-1. 2つの対立するアプローチ
+
+```python
+def scoring_methods_debate():
+    """
+    スコアリング方法の比較
+    """
+    print("スコアリング方法の大論争:")
+    print("=" * 50)
+
+    print("\n🥊 第1ラウンド：共有ピーク数 vs ピーク強度")
+    print("")
+
+    # 同じスペクトルの2つの候補例
+    spectrum_data = [
+        (114, 1000),    # 質量, 強度
+        (242, 50),
+        (371, 2000),
+        (131, 800),
+        (260, 30),
+        (388, 1500)
+    ]
+
+    print("スペクトルデータ（質量, 強度）:")
+    for mass, intensity in spectrum_data:
+        print(f"  {mass:3d}: {intensity:4d}")
+
+    print("\n方法1：共有ピーク数でスコアリング")
+    print("  → 全てのピークを同等に扱う")
+    print("  → スコア = 6（単純にピーク数）")
+
+    print("\n方法2：強度の合計でスコアリング")
+    print("  → 大きなピークほど重要")
+    print(f"  → スコア = {sum(intensity for _, intensity in spectrum_data)}")
+
+scoring_methods_debate()
+```
+
+### 11-2. それぞれの問題点
+
+```python
+def scoring_problems():
+    """
+    各スコアリング方法の問題点
+    """
+    print("各方法の問題点:")
+    print("=" * 40)
+
+    print("\n📊 共有ピーク数の問題:")
+    print("  ✗ 強度を完全に無視")
+    print("  ✗ 大きなピーク = 小さなピーク扱い")
+    print("  ✗ ノイズピークの影響を受けやすい")
+
+    print("\n🔥 強度合計の問題:")
+    print("  ✗ 1つの巨大ピークが支配する")
+    print("  ✗ 他の小さなピークが見えなくなる")
+    print("  ✗ 機器の特性に依存しやすい")
+
+    print("\n💡 理想的な解決策:")
+    print("  • 大きなピークは重要だが、支配しすぎない")
+    print("  • 小さなピークも考慮する")
+    print("  • 確率的モデルによる統一的アプローチ")
+
+    print("\n👉 これがスペクトルベクトルのアイデア！")
+
+scoring_problems()
+```
+
+## 📖 ステップ12：スペクトルベクトル - 革命的発想
+
+### 12-1. そもそもベクトル化って何？
+
+でも、ちょっと待ってください。「スペクトルをベクトルに変換」って何のこと？
+
+```python
+def vector_concept_introduction():
+    """
+    ベクトル化の基本概念をソフトウェアエンジニア向けに説明
+    """
+    print("スペクトルベクトル化の革命:")
+    print("=" * 40)
+
+    print("\n🤔 なぜベクトル化？")
+    print("問題：スペクトルは「ピーク位置と強度のペア」のリスト")
+    print("      → 比較しにくい、計算しにくい")
+    print("")
+    print("解決：固定長ベクトルに変換")
+    print("      → 線形代数の道具が使える！")
+
+    print("\n📊 具体例:")
+    print("スペクトル（従来）: [(114, 1000), (242, 50), (371, 2000)]")
+    print("スペクトルベクトル: [0, 0, ..., 1000, ..., 50, ..., 2000, ...]")
+    print("                      ↑質量0   ↑質量114    ↑質量242  ↑質量371")
+
+vector_concept_introduction()
+```
+
+### 12-2. スペクトルベクトルの構築方法
+
+```python
+def spectrum_vector_construction():
+    """
+    スペクトルベクトルの詳細な構築方法
+    """
+    print("スペクトルベクトルの構築:")
+    print("=" * 40)
+
+    # 最大質量を決める（例：500 Da）
+    max_mass = 500
+
+    print(f"1. ベクトルの長さを決める: {max_mass} 次元")
+    print("2. 全ての要素を0で初期化")
+    print("3. 各ピークに対して...")
+
+    # サンプルスペクトル
+    spectrum_peaks = [
+        (114, 1000),  # (質量, 強度)
+        (242, 50),
+        (371, 2000),
+        (131, 800)
+    ]
+
+    # スペクトルベクトル初期化
+    spectrum_vector = [0] * (max_mass + 1)
+
+    print("\nスペクトルベクトルへの変換:")
+    for mass, intensity in spectrum_peaks:
+        # でも待って、強度をそのまま使うの？
+        # 実は「振幅」という特殊な値を計算！
+        amplitude = calculate_amplitude(mass, intensity)  # 仮想関数
+        spectrum_vector[mass] = amplitude
+        print(f"  質量 {mass} → ベクトル[{mass}] = {amplitude} （振幅）")
+
+    print(f"\n結果のスペクトルベクトル（最初の10要素）:")
+    print(spectrum_vector[:10])
+
+def calculate_amplitude(mass, intensity):
+    """振幅計算の概念説明"""
+    # これは実際には複雑な確率計算
+    # ここでは簡単化した例
+    return int(intensity / 100)  # 簡略化
+
+spectrum_vector_construction()
+```
+
+### 12-3. 振幅の秘密
+
+```python
+def amplitude_mystery():
+    """
+    振幅計算の本質
+    """
+    print("振幅（Amplitude）の正体:")
+    print("=" * 40)
+
+    print("⚠️  重要な誤解を解こう:")
+    print("   振幅 ≠ ピーク強度")
+    print("   振幅 = 「そのペプチドのプレフィックスである確率」に比例")
+
+    print("\n🎯 振幅の意味:")
+    print("  質量 m のピーク → 振幅 s[m]")
+    print("  s[m] = 質量 m が未知ペプチドのプレフィックス質量である")
+    print("         可能性の高さを表す数値")
+
+    print("\n📊 具体例:")
+    examples = [
+        (114, 9, "高い確率でプレフィックス"),
+        (150, -5, "低い確率（ノイズかも）"),
+        (242, 7, "中程度の確率"),
+        (300, 3, "やや低い確率")
+    ]
+
+    for mass, amplitude, meaning in examples:
+        print(f"  質量 {mass:3d}: 振幅 {amplitude:2d} → {meaning}")
+
+    print("\n🔍 振幅の計算方法:")
+    print("  • 統計モデルを使用")
+    print("  • 機械学習アルゴリズムで学習")
+    print("  • ピーク強度、形状、周辺ピークを考慮")
+
+amplitude_mystery()
+```
+
+## 📖 ステップ13：ペプチドベクトル - 双子の概念
+
+### 13-1. ペプチドもベクトルにしちゃう
+
+スペクトルがベクトルなら、ペプチドもベクトルにできる？
+
+```python
+def peptide_vector_concept():
+    """
+    ペプチドベクトルの概念
+    """
+    print("ペプチドベクトルの登場:")
+    print("=" * 40)
+
+    peptide = "GAP"
+    masses = {'G': 57, 'A': 71, 'P': 97}
+
+    print(f"ペプチド: {peptide}")
+    print("変換手順:")
+
+    # ステップ1: プレフィックス質量を計算
+    prefix_masses = [0]
+    total = 0
+    for aa in peptide:
+        total += masses[aa]
+        prefix_masses.append(total)
+
+    print(f"1. プレフィックス質量: {prefix_masses}")
+
+    # ステップ2: バイナリベクトル化
+    max_mass = max(prefix_masses)
+    peptide_vector = [0] * (max_mass + 1)
+
+    for mass in prefix_masses:
+        peptide_vector[mass] = 1  # プレフィックスの位置を1にする
+
+    print(f"2. ペプチドベクトル: {peptide_vector}")
+    print("   （1がある位置 = プレフィックス質量）")
+
+peptide_vector_concept()
+```
+
+### 13-2. 逆変換も可能
+
+```python
+def reverse_peptide_vector():
+    """
+    ペプチドベクトルからペプチドへの逆変換
+    """
+    print("ペプチドベクトルからペプチドへの復元:")
+    print("=" * 40)
+
+    # サンプルのペプチドベクトル
+    peptide_vector = [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                      0, 0, 0, 0, 0, 0, 0, 0, 1]
+
+    # 1がある位置を見つける
+    prefix_positions = []
+    for i, val in enumerate(peptide_vector):
+        if val == 1:
+            prefix_positions.append(i)
+
+    print(f"ベクトル内の1の位置: {prefix_positions}")
+
+    # 差分からアミノ酸を復元
+    aa_masses = {57: 'G', 71: 'A', 97: 'P'}
+    peptide = ""
+
+    for i in range(1, len(prefix_positions)):
+        diff = prefix_positions[i] - prefix_positions[i-1]
+        if diff in aa_masses:
+            peptide += aa_masses[diff]
+            print(f"  差分 {diff} → アミノ酸 {aa_masses[diff]}")
+
+    print(f"\n復元されたペプチド: {peptide}")
+
+reverse_peptide_vector()
+```
+
+### 13-3. ここが天才的なポイント
+
+```python
+def vector_advantages():
+    """
+    ベクトル表現の利点
+    """
+    print("ベクトル表現の革命的利点:")
+    print("=" * 40)
+
+    print("🚀 1. 内積による類似度計算")
+    print("   スペクトルベクトル · ペプチドベクトル = スコア")
+    print("   → 線形代数で高速計算！")
+
+    print("\n🎯 2. 統一的なフレームワーク")
+    print("   • スペクトルもペプチドも同じ空間の点")
+    print("   • 距離、角度、類似度が定義できる")
+
+    print("\n⚡ 3. 高速化の可能性")
+    print("   • 行列演算による並列化")
+    print("   • GPUでの高速計算")
+    print("   • メモリ効率の改善")
+
+    print("\n🔍 4. 機械学習への応用")
+    print("   • ニューラルネットワークの入力")
+    print("   • 特徴量エンジニアリング")
+    print("   • 深層学習モデル")
+
+vector_advantages()
+```
+
+## 📖 ステップ14：振幅計算の実装詳細
+
+### 14-1. 実際の振幅はどう計算する？
+
+```python
+def amplitude_calculation_detail():
+    """
+    振幅計算の詳細実装
+    """
+    print("振幅計算の実装:")
+    print("=" * 40)
+
+    print("⚠️ 重要：振幅 ≠ 強度")
+    print("振幅は確率的モデルに基づいて計算される複雑な値")
+
+    print("\n📊 簡略化した例:")
+
+    def simplified_amplitude(mass, intensity, background_noise=100):
+        """
+        簡略化した振幅計算
+        実際にはもっと複雑な統計モデルを使用
+        """
+        # ノイズレベルを考慮したシンプルな変換
+        if intensity > background_noise * 3:
+            # 強いピーク → 正の振幅
+            return int((intensity - background_noise) / 100)
+        elif intensity > background_noise:
+            # 中程度のピーク → 小さな正の振幅
+            return int((intensity - background_noise) / 200)
+        else:
+            # 弱いピーク → 負の振幅（ノイズの可能性）
+            return -int((background_noise - intensity) / 150)
+
+    # サンプルデータで実験
+    sample_peaks = [
+        (114, 1000, "強いピーク"),
+        (150, 80, "弱いピーク"),
+        (242, 700, "中程度のピーク"),
+        (300, 300, "普通のピーク")
+    ]
+
+    print("\n計算例:")
+    for mass, intensity, desc in sample_peaks:
+        amplitude = simplified_amplitude(mass, intensity)
+        print(f"  質量 {mass:3d}, 強度 {intensity:4d} ({desc:8s}) → 振幅 {amplitude:2d}")
+
+amplitude_calculation_detail()
+```
+
+### 14-2. 負の振幅の意味
+
+```python
+def negative_amplitude_meaning():
+    """
+    負の振幅が持つ意味
+    """
+    print("負の振幅の深い意味:")
+    print("=" * 40)
+
+    print("🤔 なぜ負の値が？")
+    print("振幅は「ベイズ確率」の対数に関連")
+    print("P(プレフィックス|ピーク) vs P(ノイズ|ピーク)")
+
+    print("\n📊 解釈:")
+    print("  正の振幅: プレフィックスである可能性 > ノイズの可能性")
+    print("  負の振幅: ノイズの可能性 > プレフィックスである可能性")
+    print("  ゼロ付近: どちらとも言えない")
+
+    print("\n💡 実用的な意味:")
+    examples = [
+        (+9, "非常に信頼できるプレフィックス"),
+        (+3, "おそらくプレフィックス"),
+        (+1, "プレフィックスの可能性あり"),
+        (-1, "おそらくノイズ"),
+        (-5, "ノイズの可能性大")
+    ]
+
+    for amp, meaning in examples:
+        print(f"  振幅 {amp:+2d}: {meaning}")
+
+negative_amplitude_meaning()
+```
+
+## 📝 まとめ：理想から現実への大きな一歩
+
+### レベル1：表面的理解（これだけでもOK）
+
+- 実スペクトルはノイズだらけで複雑
+- 共有ピーク数でペプチド候補を評価
+- スペクトルとペプチドをベクトル化
+- 振幅は強度とは異なる概念
+
+### レベル2：本質的理解（ここまで来たら素晴らしい）
+
+- スコアリング手法の比較（ピーク数 vs 強度）
+- スペクトルベクトルの確率的意味
+- ペプチドベクトルの構築と逆変換
+- 振幅計算の統計的背景
+
+### レベル3：応用的理解（プロレベル）
+
+- ベイズ統計による振幅計算
+- 機械学習モデルとの統合
+- GPU並列化による高速化
+- 深層学習への応用可能性
+
+## 🚀 次回への架け橋
+
+理想スペクトルの理論を学んだあなたは、今度は実用的なアルゴリズムの世界へ！
+
+**続きの講義**：[ペプチド配列決定アルゴリズム](./peptide-sequencing-algorithms.md)
+
+そこでは以下を学びます：
+
+- 内積スコアリングの実装
+- DAGによる最大重みパス問題
+- De novo vs データベース検索の比較
+- 実用的なハイブリッドアプローチ
+
+理想から現実へ、より実用的なアルゴリズムの旅が始まります！
 
 ## 参考文献
 
