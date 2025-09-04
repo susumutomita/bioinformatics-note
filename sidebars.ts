@@ -125,7 +125,10 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Bioinformatics V: 質量分析',
-          items: ['lectures/bioinformatics5/ideal-spectrum-decoding'],
+          items: [
+            'lectures/bioinformatics5/ideal-spectrum-decoding',
+            'lectures/bioinformatics5/peptide-sequencing-algorithms',
+          ],
         },
       ],
     },
