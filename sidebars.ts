@@ -128,6 +128,10 @@ const sidebars: SidebarsConfig = {
           items: [
             'lectures/bioinformatics5/ideal-spectrum-decoding',
             'lectures/bioinformatics5/peptide-sequencing-algorithms',
+            'lectures/bioinformatics5/peptide-identification-detailed',
+            'lectures/bioinformatics5/spectral-dictionary-detailed',
+            'lectures/bioinformatics5/post-translational-modification-search-detailed',
+            'lectures/bioinformatics5/ostrich-hemoglobin-mystery-detailed',
           ],
         },
       ],
