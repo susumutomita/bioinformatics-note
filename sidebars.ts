@@ -135,6 +135,14 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics5/spectral-alignment-algorithms-detailed',
           ],
         },
+        {
+          type: 'category',
+          label: 'Bioinformatics VI: ゲノムデータサイエンス・クラスタリング',
+          items: [
+            'lectures/bioinformatics6/genomic-data-science-clustering-intro-detailed',
+            'lectures/bioinformatics6/wine-yeast-gene-mystery-detailed',
+          ],
+        },
       ],
     },
     {
