@@ -132,6 +132,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics5/spectral-dictionary-detailed',
             'lectures/bioinformatics5/post-translational-modification-search-detailed',
             'lectures/bioinformatics5/ostrich-hemoglobin-mystery-detailed',
+            'lectures/bioinformatics5/spectral-alignment-algorithms-detailed',
           ],
         },
       ],
