@@ -144,6 +144,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics6/gene-expression-matrix-world-detailed',
             'lectures/bioinformatics6/clustering-as-optimization-problem-detailed',
             'lectures/bioinformatics6/lloyd-algorithm-kmeans-detailed',
+            'lectures/bioinformatics6/hard-to-soft-clustering-detailed',
           ],
         },
       ],
