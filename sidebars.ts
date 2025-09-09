@@ -141,6 +141,9 @@ const sidebars: SidebarsConfig = {
           items: [
             'lectures/bioinformatics6/genomic-data-science-clustering-intro-detailed',
             'lectures/bioinformatics6/wine-yeast-gene-mystery-detailed',
+            'lectures/bioinformatics6/gene-expression-matrix-world-detailed',
+            'lectures/bioinformatics6/clustering-as-optimization-problem-detailed',
+            'lectures/bioinformatics6/lloyd-algorithm-kmeans-detailed',
           ],
         },
       ],
