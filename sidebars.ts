@@ -145,6 +145,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics6/clustering-as-optimization-problem-detailed',
             'lectures/bioinformatics6/lloyd-algorithm-kmeans-detailed',
             'lectures/bioinformatics6/hard-to-soft-clustering-detailed',
+            'lectures/bioinformatics6/coin-flip-to-kmeans-detailed',
           ],
         },
       ],
