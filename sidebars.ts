@@ -147,7 +147,13 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics6/hard-to-soft-clustering-detailed',
             'lectures/bioinformatics6/coin-flip-to-kmeans-detailed',
             'lectures/bioinformatics6/hierarchical-clustering-detailed',
+            'lectures/bioinformatics6/population-genetics-human-migration-detailed',
           ],
+        },
+        {
+          type: 'category',
+          label: 'Bioinformatics VII: 変異検出と配列比較',
+          items: ['lectures/bioinformatics7/finding-mutations-intro-detailed'],
         },
       ],
     },
