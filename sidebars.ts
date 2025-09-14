@@ -158,6 +158,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics7/why-build-read-maps-detailed',
             'lectures/bioinformatics7/using-tries-detailed',
             'lectures/bioinformatics7/from-tries-to-suffix-trees-detailed',
+            'lectures/bioinformatics7/string-compression-burrows-wheeler-detailed',
           ],
         },
       ],
