@@ -156,6 +156,8 @@ const sidebars: SidebarsConfig = {
           items: [
             'lectures/bioinformatics7/finding-mutations-intro-detailed',
             'lectures/bioinformatics7/why-build-read-maps-detailed',
+            'lectures/bioinformatics7/using-tries-detailed',
+            'lectures/bioinformatics7/from-tries-to-suffix-trees-detailed',
           ],
         },
       ],
