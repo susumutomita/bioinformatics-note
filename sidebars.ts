@@ -153,7 +153,10 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Bioinformatics VII: 変異検出と配列比較',
-          items: ['lectures/bioinformatics7/finding-mutations-intro-detailed'],
+          items: [
+            'lectures/bioinformatics7/finding-mutations-intro-detailed',
+            'lectures/bioinformatics7/why-build-read-maps-detailed',
+          ],
         },
       ],
     },
