@@ -160,6 +160,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics7/from-tries-to-suffix-trees-detailed',
             'lectures/bioinformatics7/string-compression-burrows-wheeler-detailed',
             'lectures/bioinformatics7/inverse-burrows-wheeler-detailed',
+            'lectures/bioinformatics7/bwt-pattern-matching-detailed',
           ],
         },
       ],
