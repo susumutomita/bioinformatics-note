@@ -163,6 +163,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics7/bwt-pattern-matching-detailed',
             'lectures/bioinformatics7/bwt-pattern-matching-position-detailed',
             'lectures/bioinformatics7/module7-1-hmm-hiv',
+            'lectures/bioinformatics7/module7-2-casino-hmm',
           ],
         },
       ],
