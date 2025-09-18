@@ -162,6 +162,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics7/inverse-burrows-wheeler-detailed',
             'lectures/bioinformatics7/bwt-pattern-matching-detailed',
             'lectures/bioinformatics7/bwt-pattern-matching-position-detailed',
+            'lectures/bioinformatics7/module7-1-hmm-hiv',
           ],
         },
       ],
