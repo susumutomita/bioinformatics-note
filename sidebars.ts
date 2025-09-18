@@ -165,6 +165,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics7/module7-1-hmm-hiv',
             'lectures/bioinformatics7/module7-2-casino-hmm',
             'lectures/bioinformatics7/module7-3-hmm-formalization',
+            'lectures/bioinformatics7/module7-4-hmm-decoding',
           ],
         },
       ],
