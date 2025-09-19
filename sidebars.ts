@@ -168,6 +168,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics7/module7-4-hmm-decoding',
             'lectures/bioinformatics7/module7-5-viterbi-algorithm',
             'lectures/bioinformatics7/module7-6-profile-hmm-detailed',
+            'lectures/bioinformatics7/module7-7-protein-classification-profile-hmm-detailed',
           ],
         },
       ],
