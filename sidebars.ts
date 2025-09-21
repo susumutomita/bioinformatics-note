@@ -170,6 +170,7 @@ const sidebars: SidebarsConfig = {
             'lectures/bioinformatics7/module7-6-profile-hmm-detailed',
             'lectures/bioinformatics7/module7-7-protein-classification-profile-hmm-detailed',
             'lectures/bioinformatics7/module7-8-viterbi-learning',
+            'lectures/bioinformatics7/module7-9',
           ],
         },
       ],
