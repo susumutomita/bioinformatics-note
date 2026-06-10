@@ -194,6 +194,7 @@ const sidebars: SidebarsConfig = {
         'advanced/state-and-ai-in-biology',
         'advanced/mrna-vaccine-development',
         'advanced/drug-discovery-limits-and-synthetic-biology',
+        'advanced/crispr-genome-editing',
       ],
     },
     {
